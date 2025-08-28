@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-MobileBank-Homepage</title>
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+    <nav class="flex items-center justify-center p-4 border-b-2 border-b-[#F4F5F7]">
+        <img src="./assets/Group.png" alt="">
+        <div class="mr-5">
+            <h3 class="font-bold">$45000</h3>
+            <p class="">Available Balance</p>
+        </div>
+        <div class="bg-white p-6">
+            <button class="btn btn-neutral btn-outline" id="logout-button" type="button"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+                Log Out</button>
+        </div>
+    </nav>
+    <!-- banner section -->
+    <section class="w-9/10 m-auto mt-6 flex flex-col gap-5 rounded-2xl">
+        <h1 class="font-bold"><i class="fa-solid fa-fire-flame-curved"></i> Welcome to Payooo!</h1>
+        <p class="font-thin">Enjoy easy and convenient financial services with us. <br>
+            Cashout charge is low and</p>
+        <!-- cards -->
+        <div class="grid grid-cols-3 gap-5">
+            <!-- card 1 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="font-thin">Add Money</p>
+            </div>
+            <!-- card 2 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+                <img src="./assets/send1.png" alt="">
+                <p class="font-thin">Cashout</p>
+            </div>
+            <!-- card 3 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3 text-center">
+                <img src="./assets/money1.png" alt="">
+                <p class="font-thin">Transfer Money</p>
+            </div>
+            <!-- card 4 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+                <img src="./assets/bonus1.png" alt="">
+                <p class="font-thin">Get Bonus</p>
+            </div>
+            <!-- card 5 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+                <img src="./assets/purse1.png" alt="">
+                <p class="font-thin">Add Money</p>
+            </div>
+            <!-- card 6 -->
+            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+                <img src="./assets/transaction1.png" alt="">
+                <p class="font-thin">Transactions</p>
+            </div>
+        </div>
+    </section>
+    <!-- list section -->
+    <section class="bg-[#f4f5f7] mt-6 pb-6">
+        <div class="w-9/10 m-auto flex flex-col gap-4">
+            <!-- heading -->
+            <div class="flex justify-between mt-6">
+                <h1 class="font-bold">Latest Payment</h1>
+                <p class="text-green-700">View All</p>
+            </div>
+            <!-- card 1 -->
+            <div class="flex items-center justify-between bg-white p-4 rounded-2xl">
+                <div class="flex gap-4">
+                    <img src="./assets/wallet1.png" alt="" class="contain-content">
+                    <div>
+                        <h1 class="font-bold">Electricity Bill</h1>
+                        <p>Today 01:44 AM</p>
+                    </div>
+
+                </div>
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-ellipsis-vertical"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a>Bill Print</a></li>
+                        <li><a>Auto-Pay</a></li>
+                    </ul>
+                </details>
+            </div>
+            <!-- card 2 -->
+            <div class="flex items-center justify-between bg-white p-4 rounded-2xl">
+                <div class="flex gap-4">
+                    <img src="./assets/wallet1.png" alt="" class="contain-content">
+                    <div>
+                        <h1 class="font-bold">Bank Deposit</h1>
+                        <p>Today 01:44 AM</p>
+                    </div>
+
+                </div>
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-ellipsis-vertical"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a>Bill Print</a></li>
+                        <li><a>Auto-Pay</a></li>
+                    </ul>
+                </details>
+            </div>
+            <!-- card 3 -->
+            <div class="flex items-center justify-between bg-white p-4 rounded-2xl">
+                <div class="flex gap-4">
+                    <img src="./assets/wallet1.png" alt="" class="contain-content">
+                    <div>
+                        <h1 class="font-bold">Mobile Recharge</h1>
+                        <p>Today 01:44 AM</p>
+                    </div>
+
+                </div>
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-ellipsis-vertical"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a>Bill Print</a></li>
+                        <li><a>Auto-Pay</a></li>
+                    </ul>
+                </details>
+            </div>
+            <!-- card 4 -->
+            <div class="flex items-center justify-between bg-white p-4 rounded-2xl">
+                <div class="flex gap-4">
+                    <img src="./assets/wallet1.png" alt="" class="contain-content">
+                    <div>
+                        <h1 class="font-bold">Gas Bill</h1>
+                        <p>Today 01:44 AM</p>
+                    </div>
+
+                </div>
+                <details class="dropdown">
+                    <summary class="btn m-1"><i class="fa-solid fa-ellipsis-vertical"></i></summary>
+                    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li><a>Bill Print</a></li>
+                        <li><a>Auto-Pay</a></li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </section>
+    <script src="home.js"></script>
+</body>
+
+</html>
