@@ -37,15 +37,15 @@
         <!-- cards -->
         <div class="grid grid-cols-3 gap-5">
             <!-- card 1 -->
-            <div class="flex flex-col items-center shadow rounded-xl gap-3 bg-blue-500/10 p-6">
+            <button type="button" class="flex flex-col items-center shadow rounded-xl p-4 gap-3" id="add-money-card">
                 <img src="./assets/wallet1.png" alt="">
-                <p class="font-bold text-purple-600">Add Money</p>
-            </div>
-            <!-- card 2 -->
-            <button class="flex flex-col items-center shadow rounded-xl p-4 gap-3" id="cashout-card">
-                <img src="./assets/send1.png" alt="">
-                <p class="font-thin">Cashout</p>
+                <p class="font-thin">Add Money</p>
             </button>
+            <!-- card 2 -->
+            <div class="flex flex-col items-center shadow rounded-xl gap-3 bg-blue-500/10 p-6">
+                <img src="./assets/send1.png" alt="">
+                <p class="font-bold text-purple-600">Cashout</p>
+            </div>
             <!-- card 3 -->
             <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3 text-center">
                 <img src="./assets/money1.png" alt="">
@@ -70,23 +70,17 @@
     </section>
     <form class="w-full p-4 m-auto bg-[#F4F5F7]">
         <div class="w-9/10 p-4 m-auto bg-white rounded-2xl flex flex-col items-center">
-            <!-- for bank -->
+            <!-- for Agent Number-->
             <div class="w-full flex flex-col gap-3 mb-3">
-                <label for="" class="font-bold">Select A Bank</label>
-                <input type="text" placeholder="Select bank" class="input w-full bg-[#F4F5F7] rounded-full"
-                    id="number-input" />
-            </div>
-            <!-- for Account Number -->
-            <div class="w-full flex flex-col gap-3 mb-5">
-                <label for="" class="font-bold">Bank Account Number</label>
-                <input type="text" placeholder="Enter 11 Digit Account Number"
-                    class="input w-full bg-[#F4F5F7] rounded-full" id="given-mobile-number" />
+                <label for="" class="font-bold">Agent Number</label>
+                <input type="text" placeholder="Enter 11 digit number" class="input w-full bg-[#F4F5F7] rounded-full"
+                    id="given-agent-number" />
             </div>
             <!-- for Amount -->
             <div class="w-full flex flex-col gap-3 mb-5">
-                <label for="" class="font-bold">Amount to Add</label>
-                <input type="text" placeholder="Add Amount to withdraw" class="input w-full bg-[#F4F5F7] rounded-full"
-                    id="amount-to-add" />
+                <label for="" class="font-bold">Amount</label>
+                <input type="text" placeholder="Enter Amount to withdraw" class="input w-full bg-[#F4F5F7] rounded-full"
+                    id="amount-to-withdraw" />
             </div>
             <!-- for pin -->
             <div class="w-full flex flex-col gap-3 mb-5">
@@ -97,12 +91,11 @@
 
             <!-- button -->
             <button type="button" class="btn w-full bg-[#0874F2] rounded-full text-white font-bold"
-                id="add-money-button">Add
-                Money</button>
+                id="cashout-button">Withdraw Money</button>
 
         </div>
     </form>
-    <script src="addmoney.js"></script>
+    <script src="cashout.js"></script>
 </body>
 
 </html>
