@@ -29,3 +29,10 @@ document.getElementById('cashout-card').addEventListener('click', function (e) {
     e.preventDefault;
     window.location.href = 'cashout.html';
 })
+
+
+// transfer card functionality
+document.getElementById('tranfer-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'transfermoney.html';
+})
