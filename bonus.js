@@ -22,8 +22,15 @@ document.getElementById('tranfer-card').addEventListener('click', function (e) {
     window.location.href = 'transfermoney.html';
 })
 
-// bonus card functionality
-document.getElementById('bonus-card').addEventListener('click', function (e) {
+// get now button functionality added
+document.getElementById('bonus-button').addEventListener('click', function (e) {
     e.preventDefault;
-    window.location.href = 'bonus.html';
+    const stockCoupon = 'Eid2026';
+    const givenCouponNumber = document.getElementById('coupon-number').value;
+    if (givenCouponNumber === stockCoupon) {
+        document.getElementById('available-blnc').innerText = parseInt(document.getElementById('available-blnc').innerText) + 202;
+    }
+    else {
+        alert('Coupon is not valid')
+    }
 })

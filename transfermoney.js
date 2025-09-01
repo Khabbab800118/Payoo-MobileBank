@@ -38,3 +38,9 @@ document.getElementById('cashout-card').addEventListener('click', function (e) {
     e.preventDefault;
     window.location.href = 'cashout.html';
 })
+
+// bonus card functionality
+document.getElementById('bonus-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'bonus.html';
+})

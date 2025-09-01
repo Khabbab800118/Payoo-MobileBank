@@ -39,3 +39,9 @@ document.getElementById('tranfer-card').addEventListener('click', function (e) {
     e.preventDefault;
     window.location.href = 'transfermoney.html';
 })
+
+// bonus card functionality
+document.getElementById('bonus-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'bonus.html';
+})
