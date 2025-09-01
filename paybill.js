@@ -29,7 +29,7 @@ document.getElementById('bonus-card').addEventListener('click', function (e) {
 })
 
 
-// add money button functionality
+// pay now button functionality
 document.getElementById('pay-now-button').addEventListener('click', function (e) {
     e.preventDefault;
     const stockBillerNumber = 1817201709;
@@ -47,4 +47,10 @@ document.getElementById('pay-now-button').addEventListener('click', function (e)
     else {
         alert('Mobile or Pin is wrong')
     }
+})
+
+// transactions card functionality
+document.getElementById('transactions-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'transactions.html';
 })

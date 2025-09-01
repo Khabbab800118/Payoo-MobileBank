@@ -34,9 +34,3 @@ document.getElementById('pay-bill-card').addEventListener('click', function (e) 
     window.location.href = 'paybill.html';
 })
 
-// transactions card functionality
-document.getElementById('transactions-card').addEventListener('click', function (e) {
-    e.preventDefault;
-    window.location.href = 'transactions.html';
-})
-
