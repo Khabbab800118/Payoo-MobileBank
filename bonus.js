@@ -34,3 +34,10 @@ document.getElementById('bonus-button').addEventListener('click', function (e) {
         alert('Coupon is not valid')
     }
 })
+
+
+// paybill card functionality
+document.getElementById('pay-bill-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'paybill.html';
+})

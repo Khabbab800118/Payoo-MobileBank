@@ -27,3 +27,10 @@ document.getElementById('bonus-card').addEventListener('click', function (e) {
     e.preventDefault;
     window.location.href = 'bonus.html';
 })
+
+// paybill card functionality
+document.getElementById('pay-bill-card').addEventListener('click', function (e) {
+    e.preventDefault;
+    window.location.href = 'paybill.html';
+})
+
