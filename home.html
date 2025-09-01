@@ -18,11 +18,12 @@
     <nav class="flex items-center justify-center p-4 border-b-2 border-b-[#F4F5F7]">
         <img src="./assets/Group.png" alt="">
         <div class="mr-5">
-            <h3 class="font-bold">$45000</h3>
+            <h3 class="font-bold">$ <span id="available-blnc">45000</span></h3>
             <p class="">Available Balance</p>
         </div>
         <div class="bg-white p-6">
-            <button class="btn btn-neutral btn-outline" id="logout-button" type="button"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+            <button class="btn btn-neutral btn-outline" id="logout-button" type="button"><i
+                    class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
                 Log Out</button>
         </div>
     </nav>
@@ -34,10 +35,14 @@
         <!-- cards -->
         <div class="grid grid-cols-3 gap-5">
             <!-- card 1 -->
-            <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
+            <!-- <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3" id="add-money button">
                 <img src="./assets/wallet1.png" alt="">
                 <p class="font-thin">Add Money</p>
-            </div>
+            </div> -->
+            <button type="button" class="flex flex-col items-center shadow rounded-xl p-4 gap-3" id="add-money-card">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="font-thin">Add Money</p>
+            </button>
             <!-- card 2 -->
             <div class="flex flex-col items-center shadow rounded-xl p-4 gap-3">
                 <img src="./assets/send1.png" alt="">
